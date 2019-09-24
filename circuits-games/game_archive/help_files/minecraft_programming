@@ -1,0 +1,14 @@
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
+
+mc.postToChat(message)
+
+pos = mc.player.getPos()
+(pos.x, pos.y, pos.z)
+
+mc.player.setPos()
+
+mc.setBlock(x,y,z, block_id)
+mc.setBlocks(x,y,z , x,y,z, block_id)
+
+mc.getBlock(x,y,z)

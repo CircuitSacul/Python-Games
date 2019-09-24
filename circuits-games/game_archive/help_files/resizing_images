@@ -1,0 +1,4 @@
+from PIL import Image
+img=Image.open('imagename')
+img=img.resize((50,50))
+img.save('newimage')
