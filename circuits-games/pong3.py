@@ -2,6 +2,8 @@ import pygame
 import sys
 from math import cos, sin, sqrt, pi
 
+player_speed = int(input("Set computer speed (1 - 5)"))
+
 pygame.quit()
 pygame.joystick.quit()
 pygame.init()
@@ -31,7 +33,6 @@ player_width = 2
 ball_r = 10
 ball_countdown = 0
 player_countdown = 0
-player_speed = int(input("Set computer_speed recommended(1 - 5)"))
 game_speed = 120
 
 
