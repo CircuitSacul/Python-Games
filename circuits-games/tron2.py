@@ -20,7 +20,7 @@ if speed_setting == 's':
 elif speed_setting == 'm':
 	game_speed = 200
 else:
-	game_speed = 400
+	game_speed = 1000
 
 print("Importing libraries")
 try:
@@ -39,8 +39,8 @@ pygame.joystick.quit()
 pygame.init()
 pygame.joystick.init()
 
-screen_width = 800
-screen_height = 800
+screen_width = 400
+screen_height = 400
 
 screen = pygame.display.set_mode((screen_width, screen_height))
 clock = pygame.time.Clock()
