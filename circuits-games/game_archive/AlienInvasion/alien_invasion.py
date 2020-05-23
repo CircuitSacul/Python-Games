@@ -135,12 +135,12 @@ def init():
     x_pos = 0
     y_pos = 0
     joystick = get_joystick()
-        for i in range(0, num_aliens):
-                x_pos += 50
-                if x_pos > screen_width:
-                        x_pos = 50
-                        y_pos += 50
-                aliens.append(alien(x_pos, y_pos, alien_speed, alien_img))
+    for i in range(0, num_aliens):
+        x_pos += 50
+        if x_pos > screen_width:
+            x_pos = 50
+            y_pos += 50
+            aliens.append(alien(x_pos, y_pos, alien_speed, alien_img))
         print pygame.mouse.get_pos()
         pygame.display.update()
     return p1, aliens, joystick
